@@ -3,11 +3,11 @@ A simple VIM script to add a custom header to files.
 
 This supports the following file types/extentions:
 
-⋅⋅* .c
-⋅⋅* .cpp
-⋅⋅* .h
-⋅⋅* .sh
-⋅⋅* .py
+- .c
+- .cpp
+- .h
+- .sh
+- .py
 
 ##Usage
 1) Edit the lmncube_header.txt with your name and github (don't change anything else)
