@@ -1,7 +1,3 @@
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-
 autocmd bufnewfile *.c so /home/luyanda/lmncube_header.txt
 autocmd bufnewfile *.c exe "1," . 7 . "g/File Name :.*/s//File Name : " .expand("%")
 autocmd bufnewfile *.c exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
@@ -22,3 +18,17 @@ autocmd bufnewfile *.h exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " 
 autocmd Bufwritepre,filewritepre *.h execute "normal ma"
 autocmd Bufwritepre,filewritepre *.h exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.h execute "normal `a"
+
+autocmd bufnewfile *.sh so /home/luyanda/lmncube_header2.txt
+autocmd bufnewfile *.sh exe "1," . 7 . "g/File Name :.*/s//File Name : " .expand("%")
+autocmd bufnewfile *.sh exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
+autocmd Bufwritepre,filewritepre *.sh execute "normal ma"
+autocmd Bufwritepre,filewritepre *.sh exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
+autocmd bufwritepost,filewritepost *.sh execute "normal `a"
+
+autocmd bufnewfile *.py so /home/luyanda/lmncube_header2.txt
+autocmd bufnewfile *.py exe "1," . 7 . "g/File Name :.*/s//File Name : " .expand("%")
+autocmd bufnewfile *.py exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
+autocmd Bufwritepre,filewritepre *.py execute "normal ma"
+autocmd Bufwritepre,filewritepre *.py exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
+autocmd bufwritepost,filewritepost *.py execute "normal `a"
