@@ -43,3 +43,11 @@ autocmd bufnewfile *.html exe "1," . 7 . "g/Creation Date :.*/s//Creation Date :
 autocmd Bufwritepre,filewritepre *.html execute "normal ma"
 autocmd Bufwritepre,filewritepre *.html exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
 autocmd bufwritepost,filewritepost *.html execute "normal `a"
+
+
+autocmd bufnewfile *.css so /home/luyanda/lmncube_header.txt
+autocmd bufnewfile *.css exe "1," . 7 . "g/File Name :.*/s//File Name : " .expand("%")
+autocmd bufnewfile *.css exe "1," . 7 . "g/Creation Date :.*/s//Creation Date : " .strftime("%d-%m-%Y")
+autocmd Bufwritepre,filewritepre *.css execute "normal ma"
+autocmd Bufwritepre,filewritepre *.css exe "1," . 7 . "g/Last Modified :.*/s/Last Modified :.*/Last Modified : " .strftime("%c")
+autocmd bufwritepost,filewritepost *.css execute "normal `a"
